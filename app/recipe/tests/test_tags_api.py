@@ -26,7 +26,7 @@ class PublicTagAPITests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 
-class PrivateTadAPITests(TestCase):
+class PrivateTagAPITests(TestCase):
     """Test authorised user tags."""
 
     def setUp(self):
