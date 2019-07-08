@@ -19,7 +19,7 @@ class AuthTokenView(ObtainAuthToken):
 class ManageUserView(generics.RetrieveUpdateAPIView):
     """Manage use profile update name and password"""
     serializer_class = UserSerializer
-    authentcation_classes = (authentication.TokenAuthentication,)
+    authentication_classes = (authentication.TokenAuthentication,)
     permission_classes = (permissions.IsAuthenticated,)
 
     def get_object(self):
